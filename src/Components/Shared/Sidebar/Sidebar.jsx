@@ -7,7 +7,7 @@ const Sidebar = (props) => {
   const [state, setState] = useState("Home");
   function HandleClick(value) {
     setState(value);
-    console.log("S");
+    console.log(" S ");
   }
 
   return (
