@@ -4,7 +4,7 @@ import ContentStyle from './style'
 
 const Content = () => {
   return (
-    <section style ={ContentStyle} >
+    <section style ={ContentStyle}  className="content">
         <Title title ={"My Favorite Cities"}/>
     </section>
   )

@@ -9,15 +9,16 @@ const Home = () => {
       tabName: "Home",
     },
     {
-        tabName:"Cities",
+      tabName: "Cities",
     },
   ];
   return (
     <>
       <Header title={"welcome to weather App"} />
-      <Sidebar tabs = {tabs} />
-      <Content />
-
+      <div className="container">
+        <Sidebar tabs={tabs} />
+        <Content />
+      </div>
     </>
   );
 };
