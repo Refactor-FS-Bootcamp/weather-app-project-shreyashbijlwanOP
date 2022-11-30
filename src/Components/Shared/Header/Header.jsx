@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../../Button'
 import HeaderStyle from './style'
 const Header = (props) => {
+
     function HandleClick()
     {
         console.log("you CLicked the Button")

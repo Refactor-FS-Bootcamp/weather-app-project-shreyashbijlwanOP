@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import Tab from "../Tabs/Tab";
 import SidebarStyle, { active } from "./style";
 
 const Sidebar = (props) => {
-  const { tabs } = props;
-  const [state, setState] = useState("Home");
-  function HandleClick(value) {
-    setState(value);
+  const { tabs,state,setState } = props;
+  
+  function HandleClick(value,fun) {
+    fun(value);
     console.log(" S ");
   }
 
@@ -14,9 +15,9 @@ const Sidebar = (props) => {
     <nav style={SidebarStyle}>
       {tabs.map((tab) => {
        return (state === tab.tabName ? (
-          <Tab key ={tab.tabName} name={tab.tabName} active={active} HandleClick={HandleClick} />
+        <Link className="underline" key ={tab.tabName} to={`/${tab.tabName}`}>  <Tab  name={tab.tabName} active={active} HandleClick={(e)=>{HandleClick(tab.tabName,setState)}} /> </Link>
         ) : (
-          <Tab name={tab.tabName} key ={tab.tabName}  HandleClick={HandleClick} />
+      <Link className="underline" key ={tab.tabName} to={`/${tab.tabName}`}> <Tab name={tab.tabName}   HandleClick={(e)=>{HandleClick(tab.tabName,setState)}} /> </Link>
         ))
       })}
     </nav>
