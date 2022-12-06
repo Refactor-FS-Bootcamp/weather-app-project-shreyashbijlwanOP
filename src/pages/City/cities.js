@@ -1,7 +1,7 @@
 import { useContext, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { popups } from '../../components/alert-msg';
+import { popups } from '../../components/msg';
 import AddCity from '../../components/common/cityAdd/AddCity';
 import './cities.css'
 import { ContextProvider } from '../../components/context/Context';
@@ -41,7 +41,7 @@ const City = ()=>{
             setFavCities([...favCities, city[0]])
         }
         else{
-            const fav = favCities.filter(ob=>ob != city[0])
+            const fav = favCities.filter(ob=>ob !== city[0])
             setFavCities(fav)
         }
         setSelectedCities(tmp) 
@@ -59,7 +59,7 @@ const City = ()=>{
                     selCities.length===0?<p>You haven't selected any city</p>
                     :<ul className='city-selected'>
                         {
-                            selCities.map(city=><li onClick={()=>handleCityDesc(city)}><p>{city.name}</p><p>{city.temp}</p></li>)
+                            selCities.map(city => <li key={city.name} onClick={()=>handleCityDesc(city)}><p>{city.name}</p><p>{city.temp}</p></li>)
                         }
                     
                     </ul>
