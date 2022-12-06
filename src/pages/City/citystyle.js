@@ -3,10 +3,12 @@ import styled from "styled-components";
 export const CityPage = styled.div`
 
     display: flex;
+    background-color:#fbfaff;
 
     .city-content{
-        border: 2px solid gray;
+        border: 1px solid lightgrey;
         height: 94vh;
+        box-shadow: 0px 0px 10px grey;
         width: 30%;
         margin: 20px;
         
@@ -18,10 +20,10 @@ export const CityPage = styled.div`
             padding: 10px;
 
             button{
-                height: 30px;
-                width: 30px;
+                height: 25px;
+                width: 25px;
                 border: 1px solid gray;
-                background: lightgray;
+                background: none;
                 border-radius: 50px;
             }
         }
@@ -35,12 +37,12 @@ export const CityPage = styled.div`
                 li{
                     list-style: none;
                     margin-top: 10px;
-                    border: 2px solid gray;
+                    border: 1px solid lightgrey;
+                    box-shadow: 0px 0px 10px grey;
                     width: 100%;
                     height: 50px;
-                    border-radius: 5px;
-                    padding-left: 10px;
-                    background-color: #E9ECEB ;
+                    padding: 5px 10px;
+                    background-color: none ;
                     color:rgb(78, 75, 75);
 
                     &:hover{
@@ -61,17 +63,17 @@ export const CityPage = styled.div`
     } 
 
     .city-desc{
-        border: 2px solid rgb(237, 235, 235);
+        border: 1px solid lightgrey;
         height: 91vh;
         width: 60%;
         margin: 20px;
-        box-shadow: 0px 0px 4px rgb(0 0 0 / 75%);
+        box-shadow: 0px 0px 10px grey;
 
         .city-desc-header{
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
+            padding: 0px  20px;
         }
 
         input{
@@ -102,7 +104,7 @@ export const CityPage = styled.div`
                 #description{
                     margin-top: 20px;
                     font-size: 18px;
-                    color:blue;
+                    color:green;
              
                 }
 

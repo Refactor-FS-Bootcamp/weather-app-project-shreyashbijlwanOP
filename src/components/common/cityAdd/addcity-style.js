@@ -5,21 +5,19 @@ export const CityAdder = styled.div`
     height: 400px;
     width: 400px; 
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
+    overflow:hidden;
 
     .add-city-header{
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 10px;
-        background: violet;
+        background:#ffce5f ;
         height: 50px;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
     }  
 
     .addcity-input{
-        border: 2px solid rgb(169, 162, 162);
         height: 65px;
         display: flex;
         align-items: center;
@@ -27,11 +25,9 @@ export const CityAdder = styled.div`
 
         input{
             height: 35px;
-            width: 70%;
-            border: 2px solid black;
+            width: 80%;
             font-size: 15px;
-            border-radius: 5px;
-
+            text-indent:5px;
             &:hover{
                 border: 2px solid rgb(54, 162, 224);
                 transition-duration: 0.3s;
@@ -61,9 +57,9 @@ export const CityAdder = styled.div`
 
         ul li button{
             font-size: 20px;
-            height: 30px;
+            height: 25px;
             width: 25px;
-            background: gray;
+            background: none;
             border-radius: 60px;
         }
     }

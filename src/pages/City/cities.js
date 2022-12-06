@@ -3,7 +3,6 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { popups } from '../../components/msg';
 import AddCity from '../../components/common/cityAdd/AddCity';
-import './cities.css'
 import { ContextProvider } from '../../components/context/Context';
 
 import { Cities } from '../../components/city_list';

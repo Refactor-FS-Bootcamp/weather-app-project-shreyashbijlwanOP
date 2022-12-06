@@ -3,13 +3,11 @@ import styled from "styled-components";
 
 export const SiderWrapper= styled.div`
 
-    background-color: #03ECBB  ;
-    width: 150px;
+    background-color: #633ea5  ;
+    width: 120px;
     height: 100vh;
-    color: black;
 
     a{
-        color: black;
         text-decoration: none;
     }
 

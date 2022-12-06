@@ -9,7 +9,8 @@ align-items: center;
 padding: 10px;
 display: flex;
 justify-content: space-between;
-background-color: #E5B4B4 ;
+background-color:#fbfaff; ;
+
 
 `;
 
@@ -32,21 +33,22 @@ export const ContentWrap = styled.div`
 
     .fav-items{
         height: 18vh;
-        width: 240px;
+        width: 280px;
         display: grid;
         margin-left: 20px;
         margin-top: 20px;
-        border-radius: 5px;
-        background-color: #F5F0F0  ;
-        border: 1px solid black;
+        box-shadow: 0px 0px 10px grey;
+        background-color: whitesmoke;
+        border: 1px solid grey;
         overflow-y: scroll;
 
         .fav-list-header{
             display: flex;
             justify-content: space-between;
+            padding: 0px 10px;
 
             h4{
-                margin: 10px 5px;
+                margin: 10px 0px;
                 font-size: 17px;
                 color: black;
                 text-decoration: underline;
@@ -65,13 +67,13 @@ export const ContentWrap = styled.div`
         }
 
         .fav-item-cont{
-            margin-left: 5px;
+            margin-left: 15px;
             font-size: 15px;
-            color: blue;
+            color: green;
         }
         
         .fav-item-des{
-            margin-left: 5px;
+            margin: 10px;
             font-size: 15px;
             span{
                 font-weight: bold;
@@ -88,9 +90,5 @@ export const ContentWrap = styled.div`
 .fav-list::-webkit-scrollbar{
     display: none;
 }
-
-
-
-
 
 `;

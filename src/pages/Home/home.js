@@ -38,7 +38,7 @@ const Home = ()=>{
         border: 'none',
         height: '40px',
         width: '150px',
-        backgroundColor: 'blue',
+        backgroundColor: '#633ea5',
         color: 'white',
         fontSize: '17px'
     }
@@ -72,7 +72,7 @@ const Home = ()=>{
         <div className='home-wrap'>
             <HeaderWrap>
                 <div className = 'h1-text'>
-                    <h1>My favorite cities</h1>
+                    <h2>My favorite cities</h2>
                 </div>
                 <div>
                     <Button name = 'Add New City' customStyle = {styleBtn} handleClick = {handleClick} />
@@ -83,7 +83,7 @@ const Home = ()=>{
                 <div className='fav-list'>
                 {favCities.length === 0?<div className='no-fav'>You haven't selected any favorite cities!</div>:
                 
-                favCities.map(city=><FavListAdd city = {city} checkClick={()=>favCitiesRemove(city)} />)
+                favCities.map(city=><FavListAdd key={city.name} city = {city} checkClick={()=>favCitiesRemove(city)} />)
                 
                 }
                 </div>
